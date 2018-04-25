@@ -85,9 +85,9 @@ public class SampleData implements ApplicationRunner
       customer.setPurchases (new HashSet<> ());
 
       for (int i = 0; i < random.nextInt (5); i++) {
-         final Purchase counter = newPurchase (random.nextInt (10000));
-         counter.setCustomer (customer);
-         customer.getPurchases ().add (counter);
+         final Purchase purchase = newPurchase (random.nextInt (10000));
+         purchase.setCustomer (customer);
+         customer.getPurchases ().add (purchase);
       }
       return customer;
    }
