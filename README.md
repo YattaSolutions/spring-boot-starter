@@ -5,6 +5,10 @@ On startup, Spring will set up an in-memory HSQL database. The database schema w
 the given JPA entities in the `backend.domain` package. When the Spring application context has been initialized, the
 database will be filled with some randomized dummy entries; see the `SampleData` component for details.
 
+## Prerequisites
+* JDK 8 or higher is required
+* Maven 3 or higher is required
+
 ## Usage
 To launch the server, build the project with Maven and simply start the jar file:
 `mvn clean package && java -jar target/backend.jar`
